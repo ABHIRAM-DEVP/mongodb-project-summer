@@ -1,0 +1,43 @@
+# Logs
+logs/
+*.log
+app/logs/
+
+# Compiled class files & build directories
+target/
+app/target/
+build/
+app/build/
+*.class
+
+# Maven & Gradle
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+.settings/
+.classpath
+.project
+.factorypath
+.springBeans
+.sts4-cache
+
+# Operating System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Temporary & Swap Files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Optional: Binary Word Documents (Uncomment to exclude heavy docx report files)
+# *.docx
