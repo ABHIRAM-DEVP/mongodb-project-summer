@@ -1,6 +1,5 @@
 package com.SmartStockPro.app.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
@@ -17,4 +16,13 @@ public class InventoryDetails {
     private String warehouseLocation;
     private String batchNumber;
     private LocalDate lastStockUpdate;
+
+    public InventoryDetails(String id, String productId, String warehouseLocation, String batchNumber, LocalDate lastStockUpdate) {
+        this.id = id;
+        this.productId = productId;
+        this.warehouseLocation = warehouseLocation;
+        this.batchNumber = batchNumber;
+        this.lastStockUpdate = lastStockUpdate;
+    }
 }
+

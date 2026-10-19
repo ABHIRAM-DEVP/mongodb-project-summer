@@ -1,6 +1,5 @@
 package com.SmartStockPro.app.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
@@ -15,4 +14,10 @@ public class Reminder {
     private String id;
     private String message;
     private LocalDateTime createdAt;
+
+    public Reminder(String id, String message, LocalDateTime createdAt) {
+        this.id = id;
+        this.message = message;
+        this.createdAt = createdAt;
+    }
 }

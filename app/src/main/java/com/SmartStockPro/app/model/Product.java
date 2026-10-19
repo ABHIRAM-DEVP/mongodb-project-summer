@@ -1,6 +1,5 @@
 package com.SmartStockPro.app.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
@@ -24,4 +23,18 @@ public class Product {
 
     @DocumentReference
     private InventoryDetails inventoryDetails;
+
+    public Product(String id, String name, double price, int quantity, String categoryId,
+                   String supplierId, LocalDate expiryDate, int threshold, InventoryDetails inventoryDetails) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+        this.categoryId = categoryId;
+        this.supplierId = supplierId;
+        this.expiryDate = expiryDate;
+        this.threshold = threshold;
+        this.inventoryDetails = inventoryDetails;
+    }
 }
+

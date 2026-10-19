@@ -1,6 +1,5 @@
 package com.SmartStockPro.app.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
@@ -14,4 +13,11 @@ public class Supplier {
     private String id;
     private String supplierName;
     private String contact;
+
+    public Supplier(String id, String supplierName, String contact) {
+        this.id = id;
+        this.supplierName = supplierName;
+        this.contact = contact;
+    }
 }
+

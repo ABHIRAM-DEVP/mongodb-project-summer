@@ -1,6 +1,5 @@
 package com.SmartStockPro.app.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
@@ -16,4 +15,12 @@ public class Sale {
     private String productId;
     private int quantitySold;
     private LocalDateTime saleDate;
+
+    public Sale(String id, String productId, int quantitySold, LocalDateTime saleDate) {
+        this.id = id;
+        this.productId = productId;
+        this.quantitySold = quantitySold;
+        this.saleDate = saleDate;
+    }
 }
+
